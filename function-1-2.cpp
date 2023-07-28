@@ -5,14 +5,11 @@ double array_mean(int array[], int n)
     {
         return 0; 
     }
-    else
-    {
-    int mean = 0; 
+    double mean = 0; 
     for (int i = 0; i < n; i ++)
     {
         mean += array[i];
     }
     mean /= n; 
     return mean;
-    }
 }

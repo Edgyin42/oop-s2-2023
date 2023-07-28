@@ -20,6 +20,6 @@ void two_five_nine(int array[], int n)
             num9++;
         }
     }
-    cout << "2:" << num2 << ";5:" << num5 << ";9:" << num9 << endl; 
+    cout << "2:" << num2 << ";5:" << num5 << ";9:" << num9 << ";" << endl; 
 }
 

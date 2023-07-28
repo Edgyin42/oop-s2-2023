@@ -3,7 +3,7 @@ extern bool is_fanarray(int array[], int n);
 using namespace std; 
 int main(void)
 {
-    int a[] = {1,2,1,2,1};
+    int a[] = {1,2,2,2,1};
     bool x = is_fanarray(a, 5);
     if (x == 0)
     {
