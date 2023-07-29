@@ -11,7 +11,11 @@ bool is_fanarray(int array[], int n) {
     if (array[i - 1] > array[i]) {
       return false;
     }
-     if (array[i] != array[n - i]) {
+    if (i = (n-1)/2)
+    {
+      break;
+    }
+    if (array[i] != array[n - i]) {
         return false;
       }
   }
