@@ -4,7 +4,7 @@ bool is_fanarray(int array[], int n) {
   if (n < 1) {
     return false;
   } 
-  if ( array[0] != array[n])
+  if ( array[0] == array[n])
   {
     for (int i = 1; i < n/2; i++)
     {
@@ -18,6 +18,7 @@ bool is_fanarray(int array[], int n) {
       }
       return false; 
     }
+    return false; 
   }
   return true; 
 }
