@@ -14,7 +14,6 @@ bool is_fanarray(int array[], int n) {
      if (array[i] != array[n - i]) {
         return false;
       }
-    return false;
   }
   return true;
 }
