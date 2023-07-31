@@ -69,7 +69,7 @@ string ShiftLeft(string a)
 }
 int main()
 {
-    string a = AddBinary("100", "11"); 
+    string a = ShiftRight("100"); 
     cout << a; 
 }
 
