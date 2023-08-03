@@ -47,7 +47,7 @@ int sum_if_palindrome (int integer[], int length)
     {
         return 0; 
     } 
-    int sum; 
+    int sum = 0; 
     bool a = is_palindrome(integer, length); 
     if (a == true)
     {
