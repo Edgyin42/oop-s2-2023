@@ -15,13 +15,13 @@ bool is_palindrome(int integers[], int length)
             return false; 
         }
     }
-    for (int i = 0; i < ((length-1)/2); i++)
-    {
-        if (integers[i+1] < integers[i])
-        {
-            return false; 
-        }
-    }
+    // for (int i = 0; i < ((length-1)/2); i++)
+    // {
+    //     if (integers[i+1] < integers[i])
+    //     {
+    //         return false; 
+    //     }
+    // }
     return true; 
 }
 
