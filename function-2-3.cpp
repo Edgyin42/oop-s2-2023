@@ -53,6 +53,10 @@ int sum_if_palindrome (int integer[], int length)
     {
         sum = sum_array_elements(integer, length); 
     }
+    else
+    {
+    sum = -2; 
+    }
     return sum; 
 }
 
