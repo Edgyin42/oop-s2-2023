@@ -13,5 +13,6 @@ int main()
     {
         sum = sum_array_elements(a, 7); 
     }
+    cout << x << endl; 
     cout << sum << endl;
 }
