@@ -26,12 +26,17 @@ int secondSmallestSum(int *numbers,int length)
         {
             if (numbers[j] < numbers[i])
             {
-                int temp = numbers[i];
+                int temp = numbers[j];
                 numbers[j] = numbers[i]; 
                 numbers[i] = temp; 
             }
         }
     }
+    for (int i = 0; i < length; i++)
+    {
+        cout << numbers[i] << " "; 
+    }
+    cout<<endl;
     int min1 = numbers[0]; 
     int min2; 
     if (numbers[1] > min1)
