@@ -1,20 +1,10 @@
 #include <iostream> 
 using namespace std; 
-extern void print_matrix(int array[10][10]);
+extern int *readNumbers();
+extern void printNumbers(int *numbers, int length); 
 int main()
 {
-    int a[10][10]= {
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0},
-        {1,2,3,0,0,0,0,0,0,0} 
-    };
-    
-    print_matrix(a); 
+    int *arr = readNumbers();  
+    printNumbers(arr, 10); 
+    delete(arr); 
 }
