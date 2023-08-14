@@ -52,16 +52,16 @@ void hexDigits(int *numbers, int length)
                  cout << i << " " << numbers[i] << " " << "B" << endl; 
             break; 
             case 12:
-                 cout << i << " " << numbers[i] << " " << "B" << endl; 
-            break; 
-            case 13:
                  cout << i << " " << numbers[i] << " " << "C" << endl; 
             break; 
-            case 14:
+            case 13:
                  cout << i << " " << numbers[i] << " " << "D" << endl; 
             break; 
-            case 15:
+            case 14:
                  cout << i << " " << numbers[i] << " " << "E" << endl; 
+            break; 
+            case 15:
+                 cout << i << " " << numbers[i] << " " << "F" << endl; 
             break; 
         }
     }
