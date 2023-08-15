@@ -1,7 +1,7 @@
 #include <iostream> 
 #include "Person.h"
 Person* createPersonArray(int n) {
-    Person* personArray = new Person[n]; // Allocate memory for n Person structs
+    Person* personArray = new Person[n]; 
 
     for (int i = 0; i < n; ++i) {
         personArray[i].name = "John Doe";
