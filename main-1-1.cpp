@@ -1,10 +1,11 @@
 #include <iostream>
-#include "Musician.h"
+#include "Asset.h"
 using namespace std; 
 int main() {
-Musician m1;
-std::cout << "Default instrument: " << m1.get_instrument() << ", Default experience: " << m1.get_experience() << std::endl;
-Musician m2("guitar", 5);
-std::cout << "Instrument: " << m2.get_instrument() << ", Experience: " << m2.get_experience() << std::endl;
+Asset m1;
+std::cout << "Default value: " << m1.get_value() << ", Default product type: " << m1.get_product_type() << std::endl;
+Asset m2(0, "a");
+std::cout << "Default value: " << m2.get_value() << ", Default product type: " << m2.get_product_type() << std::endl;
 return 0;
+
 }
