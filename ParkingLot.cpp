@@ -13,7 +13,7 @@ void ParkingLot::parkVehicle(Vehicle *vehicle){
         count++;
     }
     else{
-        cout << "The lot if full" << endl; 
+        cout << "The lot is full" << endl; 
     }
 };
 void ParkingLot::unparkVehicle(int ID){
