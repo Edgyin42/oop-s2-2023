@@ -1,19 +1,28 @@
 #include <iostream> 
-#include "Person.h"
-extern PersonList createPersonList(int n);
-extern PersonList deepCopyPersonList(PersonList pl); 
+#include "ParkingLot.h"
 int main()
 {
-    int n = 1; 
-    Person a; 
-    a.name = "hhh"; 
-    a.age = 18; 
-    PersonList pl; 
-    pl.numPeople = n; 
-    pl.people = &a; 
-
-    PersonList b = deepCopyPersonList(pl); 
-    delete[] b.people; 
-    delete[] pl.people; 
-    return 0; 
+ParkingLot a(10); 
+Car *car1 = new Car(1); 
+Car *car2 = new Car(2); 
+Car *car3 = new Car(3); 
+Car *car4 = new Car(4); 
+Car *car5 = new Car(5); 
+Bus *bus6 = new Bus(6); 
+Bus *bus7 = new Bus(7); 
+Motorbike *motorbike8 = new Motorbike(8); 
+Motorbike *motorbike9 = new Motorbike(9); 
+Motorbike *motorbike10 = new Motorbike(10); 
+a.parkVehicle(car1);
+a.parkVehicle(car2);
+a.parkVehicle(car3);
+a.parkVehicle(car4);
+a.parkVehicle(car5);
+a.parkVehicle(bus6);
+a.parkVehicle(bus7);
+a.parkVehicle(motorbike10);
+a.parkVehicle(motorbike9);
+a.parkVehicle(motorbike8);
+int n = a.countOverstayingVehicle(15); 
+cout << n << endl; 
 }
