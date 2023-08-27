@@ -29,7 +29,7 @@ void ParkingLot::unparkVehicle(int ID){
             return; 
          } 
     }
-    cout << "Vehicle not found in the lot" << endl; 
+    cout << "Vehicle not in the lot" << endl; 
 
 }; 
 ParkingLot::~ParkingLot(){
