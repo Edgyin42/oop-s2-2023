@@ -13,6 +13,6 @@ class ParkingLot{
     void parkVehicle(Vehicle *m);
     void unparkVehicle(int ID); 
     ~ParkingLot(); 
-    int countOverstayingVehicle(int maxParkingDuarion); 
+    int countOverstayingVehicles(int maxParkingDuarion); 
 };
 #endif // PARKINGLOT_H

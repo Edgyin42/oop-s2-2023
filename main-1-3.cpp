@@ -26,6 +26,6 @@ a.parkVehicle(bus7);
 a.parkVehicle(motorbike10);
 a.parkVehicle(motorbike9);
 a.parkVehicle(motorbike8);
-int n = a.countOverstayingVehicle(15); 
+int n = a.countOverstayingVehicles(15); 
 cout << n << endl; 
 }
