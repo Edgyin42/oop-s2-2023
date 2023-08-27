@@ -1,7 +1,9 @@
 #include <iostream>
 #include "ParkingLot.h"
-#include "Vehicle.h"  // Include your Vehicle-derived classes here
-
+#include "Vehicle.h"  
+#include "Bus.h"
+#include "Car.h"
+#include "Motorbike.h"
 int main() {
     ParkingLot parkingLot(10);  // Create a parking lot with a capacity of 10 vehicles
     Car *car1 = new Car(101);  // Create Car objects with IDs
