@@ -1,16 +1,9 @@
-
-#include <iostream>
-#include "Vehicle.h"
-#include "Bus.h"
-#include "Car.h"
-#include "Motorbike.h"
-using namespace std;
+#include "Appliance.h"
 int main(){
-    Car a(10); 
-    cout << a.getParkingDuration()<< endl;
-    Bus b(11); 
-    cout << b.getParkingDuration() << endl;
-    Motorbike c(12); 
-    cout << c.getParkingDuration() << endl;
+    Appliance a; 
+    cout<< a.get_powerRating() << " " << a.get_isOn() << endl; 
+    Appliance b(10); 
+    b.turnOn(); 
+    cout<< b.get_powerRating() << " "<<  b.get_isOn() << endl; 
+    return 0; 
 }
-
