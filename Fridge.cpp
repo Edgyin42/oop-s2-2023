@@ -1,6 +1,8 @@
 #include "Fridge.h"
 Fridge::Fridge():Appliance(0), volume(0){};
-Fridge::Fridge(int powerRating, double volume): Appliance(powerRating), volume(volume){};
+Fridge::Fridge(int powerRating, double volume): volume(volume){
+    this->powerRating = powerRating; 
+};
 
 void Fridge::setVolume(double volume){
     this->volume = volume; 
@@ -10,6 +12,6 @@ double Fridge::getVolume(){
 };
 
 double Fridge::getPowerConsumption(){
-    double powerConsumption = powerRating * 24 * (volume / 100); 
+    double powerConsumption = this->powerRating * 24 * (this->getVolume() / 100); 
     return powerConsumption; 
 }; 

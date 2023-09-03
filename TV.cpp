@@ -1,7 +1,9 @@
 #include "TV.h"
 
 TV::TV(): Appliance(0), screenSize(0){};
-TV::TV(int powerRating, double screenSize): Appliance(powerRating), screenSize(screenSize){};
+TV::TV(int powerRating, double screenSize): Appliance(powerRating), screenSize(screenSize){
+    this->powerRating = powerRating; 
+};
 
 void TV::setScreenSize(double screenSize){
     this->screenSize = screenSize; 
