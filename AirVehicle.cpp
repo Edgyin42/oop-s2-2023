@@ -3,6 +3,7 @@ AirVehicle::AirVehicle(){
     this->numberOfFlights = 0; 
 }; 
 AirVehicle::AirVehicle(int w){
+    this->numberOfFlights = get_numberOfFlights(); 
     this->weight = w; 
 }; 
 int AirVehicle::get_weight(){
@@ -24,7 +25,7 @@ int AirVehicle::get_numberOfFlights(){
     return this->numberOfFlights; 
 };
 void AirVehicle::fly(int headwind, int minutes){
-    this->numberOfFlights = 1; 
+    this->numberOfFlights = +=this->numberOfFlights; 
 };  
 void AirVehicle::set_numberOfFlights(int k){
     this->numberOfFlights = k; 
