@@ -1,9 +1,11 @@
 #include  "AirVehicle.h"    
 AirVehicle::AirVehicle(){
     this->numberOfFlights = 0; 
+    this->fuel = 100; 
 }; 
 AirVehicle::AirVehicle(int w){
     this->numberOfFlights = 0; 
+    this->fuel = 100; 
     this->weight = w; 
 }; 
 int AirVehicle::get_weight(){
