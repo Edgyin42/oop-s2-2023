@@ -21,7 +21,7 @@ void Helicopter::fly(int headwind, int minutes){
         } 
         this->fuel -= 0.18*minutes; 
     if (this->weight > 5670){
-        this->fuel  -= (this->weight-5670)*0.01; 
+        this->fuel  -= (this->weight-5670)*0.01*minutes; 
     }
     this->numberOfFlights += 1;
     }
