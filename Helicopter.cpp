@@ -16,10 +16,13 @@ void Helicopter::set_name(string n){
     this->name = n; 
 }; 
 void Helicopter::fly(int headwind, int minutes){
-        if (headwind > 40){
+    if (headwind > 0){
+    if (headwind > 40){
         this->fuel -= 0.4*minutes; 
-        } 
+    } 
+    else{
         this->fuel -= 0.18*minutes; 
+    }}
     if (this->weight > 5670){
         this->fuel  -= (this->weight-5670)*0.01*minutes; 
     }
