@@ -24,7 +24,7 @@ int AirVehicle::get_numberOfFlights(){
     return this->numberOfFlights; 
 };
 void AirVehicle::fly(int headwind, int minutes){
-    this->numberOfFlights += 1; 
+    this->numberOfFlights = 1; 
 };  
 void AirVehicle::set_numberOfFlights(int k){
     this->numberOfFlights = k; 
