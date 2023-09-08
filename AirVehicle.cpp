@@ -1,5 +1,7 @@
 #include  "AirVehicle.h"    
-AirVehicle::AirVehicle(){}; 
+AirVehicle::AirVehicle(){
+    this->numberOfFlights = 0; 
+}; 
 AirVehicle::AirVehicle(int w){
     this->weight = w; 
 }; 
@@ -22,7 +24,7 @@ int AirVehicle::get_numberOfFlights(){
     return this->numberOfFlights; 
 };
 void AirVehicle::fly(int headwind, int minutes){
-    this->numberOfFlights += this->numberOfFlights; 
+    this->numberOfFlights += 1; 
 };  
 void AirVehicle::set_numberOfFlights(int k){
     this->numberOfFlights = k; 
