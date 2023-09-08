@@ -13,7 +13,7 @@ void Helicopter::set_name(string n){
     this->name = n; 
 }; 
 void Helicopter::fly(int headwind, int minutes){
-    if (headwind >= 40){
+    if (headwind > 40){
         this->fuel -= 0.4*this->fuel; 
     } 
     else{
