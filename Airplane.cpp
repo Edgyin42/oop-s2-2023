@@ -1,28 +1,44 @@
-  #include "Airplane.h"  
-Airplane::Airplane(){}; 
-Airplane::Airplane(int w, int p){
-    this->weight = w; 
-    this->numPassengers = p; 
-}
-int Airplane::get_numPassengers(){
-    return this->numPassengers; 
-}; 
-void Airplane::reducePassengers(int x){
-    this->numberOfFlights = 0;
-    this->fuel = 100; 
-    this->numPassengers -= x; 
-    if (this->numPassengers < 0){
-        this->numPassengers = 0; 
-    }
-}; 
-void Airplane::fly(int headwind, int minutes){
-    if (headwind >= 60){
-        this->fuel -= 0.5*minutes; 
-    } 
-        this->fuel -= 0.25*minutes; 
-    this->fuel -= this->numPassengers*0.001*minutes; 
-    if(this->fuel >=20){
-    this->numberOfFlights += 1;
-    }
 
-}; 
+
+#include "AirVehicle.h"
+#include "Airplane.h"
+#include <string>
+using namespace std;
+
+Airplane::Airplane(): AirVehicle(){};
+ Airplane::Airplane(int w, int p): AirVehicle(w){
+    this->numPassengers = p;
+ };
+
+int Airplane::get_numPassengers(){
+    return this->numPassengers;
+};
+void Airplane::reducePassengers(int x){
+    
+    if ( this->get_numPassengers() - x> 0 )
+    {
+        this->numPassengers -= x;
+    }else{
+        this->numPassengers = 0;
+    }
+    
+};
+ void Airplane::fly(int headwind, int minutes){
+float fuel;
+if(headwind >=60 ){
+    fuel = 0.25;
+}else{
+    fuel = 0.5;
+}
+
+fuel += 0.001*this->numPassengers;
+
+
+float fuelUse = fuel*minutes ;
+float fuelLeft = this->get_fuel() - fuelUse;
+if(fuelLeft > 20){
+this->numberOfFlights++;
+this->set_fuel(fuelLeft);
+}
+
+ }
