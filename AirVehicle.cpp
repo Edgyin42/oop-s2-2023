@@ -16,7 +16,7 @@ void AirVehicle::set_fuel(float f){
     this->fuel = f; 
 }; 
 void AirVehicle::refuel(){
-    this->fuel = 100; 
+    this->fuel = 100.0; 
 }; 
 void AirVehicle::fly(int headwind, int minutes){
     this->numberOfFlights += 1; 
