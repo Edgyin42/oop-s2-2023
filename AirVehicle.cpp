@@ -3,7 +3,7 @@ AirVehicle::AirVehicle(){
     this->numberOfFlights = 0; 
 }; 
 AirVehicle::AirVehicle(int w){
-    this->numberOfFlights = get_numberOfFlights(); 
+    this->numberOfFlights = 0; 
     this->weight = w; 
 }; 
 int AirVehicle::get_weight(){
