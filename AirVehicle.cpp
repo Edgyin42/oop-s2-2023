@@ -9,7 +9,9 @@ int AirVehicle::get_weight(){
 void AirVehicle::set_weight(int w){
     this->weight = w; 
 };
-float AirVehicle::get_fuel(){}; 
+float AirVehicle::get_fuel(){
+    return this->fuel; 
+}; 
 void AirVehicle::set_fuel(float f){
     this->fuel = f; 
 }; 
