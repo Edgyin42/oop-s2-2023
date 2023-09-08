@@ -1,8 +1,10 @@
-#include "TV.h"
+#include <iostream>
+#include "Tesla.h" 
+#include "Ford.h"
 int main(){
-    TV a; 
-    cout << a.getScreenSize() << " " <<  a.getPowerConsumption() << endl; 
-    TV b(10, 10); 
-    cout << b.getScreenSize() << " " << b.getPowerConsumption() << endl; 
-    return 0; 
+    Ford b(15, 50);
+    b.refuel(10); 
+    b.drive(15); 
+    cout << b.litresOfFuel<< endl;
+     
 }

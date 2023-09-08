@@ -1,8 +1,10 @@
-#include "Fridge.h"
+#include <iostream>
+#include "Tesla.h" 
+#include "Car.h"
 int main(){
-    Fridge a; 
-    cout << a.getVolume() << " " <<  a.getPowerConsumption() << endl; 
-    Fridge b(10, 100); 
-    cout << b.getVolume() << " " << b.getPowerConsumption() << endl; 
-    return 0; 
+    Tesla a('A', 50);
+    a.chargeBattery(10); 
+    a.drive(15); 
+    cout << a.batteryPercentage << endl;
+     
 }
