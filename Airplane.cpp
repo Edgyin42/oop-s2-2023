@@ -16,10 +16,10 @@ void Airplane::reducePassengers(int x){
 void Airplane::fly(int headwind, int minutes){
     if (headwind > 0 ){
     if (headwind >= 60){
-        this->fuel -= 0.5*this->fuel; 
+        this->fuel -= 0.5*minutes; 
     } 
     else{
-        this->fuel -= 0.25*this->fuel; 
+        this->fuel -= 0.25*minutes; 
     }
     }
     this->fuel  -= this->numPassengers*0.001; 
