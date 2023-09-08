@@ -5,6 +5,8 @@ int Airplane::get_numPassengers(){
     return this->numPassengers; 
 }; 
 void Airplane::reducePassengers(int x){
+    this->numberOfFlights = 0;
+    this->fuel = 100; 
     this->numPassengers -= x; 
     if (this->numPassengers < 0){
         this->numPassengers = 0; 

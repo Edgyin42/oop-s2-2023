@@ -1,6 +1,8 @@
 #include "Helicopter.h"  
 Helicopter::Helicopter(){}; 
 Helicopter::Helicopter(int w, string n){
+    this->fuel = 100; 
+    this->numberOfFlights = 0;
     this->weight = w; 
     this->name = n; 
 }; 
