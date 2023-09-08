@@ -1,20 +1,27 @@
+
+#include <iostream>
 #include "Tesla.h"
-Tesla::Tesla():batteryPercentage(100){};
+Tesla::Tesla(){
+    this->batteryPercentage = 100.0; 
+}; 
 Tesla::Tesla(char model, int price){
-    this->model = model; 
+    this->batteryPercentage = 100.0; 
+    this -> model = model; 
     this->price = price; 
-    this->batteryPercentage = 100; 
 }; 
 void Tesla::chargeBattery(int mins){
     this->batteryPercentage += mins*0.5; 
-    if (this->batteryPercentage > 100){
-        this->batteryPercentage = 100; 
+    if (batteryPercentage>100.0){
+        this->batteryPercentage = 100.0; 
     }
 }; 
-void Tesla::drive(int kms) {
+void Tesla::drive(int kms){
     this->batteryPercentage -= kms/5; 
-    this->emissions = 74*kms; 
-    if (this->batteryPercentage < 0){
+    this->emission = 74*kms; 
+    if (batteryPercentage<0){
         this->batteryPercentage = 0; 
     }
 }; 
+int Tesla::get_batteryPercentage(){
+    return this->batteryPercentage; 
+}

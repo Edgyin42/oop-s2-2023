@@ -2,13 +2,13 @@
 #define FORD_H
 #include "Car.h"
 class Ford: public Car{
-    private: 
+    protected:
     int badgeNumber; 
-    public: 
+    public:
     float litresOfFuel; 
     Ford(); 
     Ford(int badgeNumber, int price); 
     void refuel(int litres); 
     void drive(int kms); 
-}; 
-#endif
+};
+#endif 

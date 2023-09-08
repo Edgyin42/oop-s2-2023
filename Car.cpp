@@ -1,16 +1,22 @@
-   #include "Car.h"
+#include <iostream>
+#include "Car.h"
 Car::Car(){
-    this->price = 0;
-    this->emissions = 0; 
-}
-Car::Car(int price):price(this->get_price()){}
-
+}; 
+Car::Car(int price){
+    this-> price = price; 
+}; 
+void Car::drive(int kms){
+    this->emission += 20*kms; 
+}; 
 void Car::set_price(int price){
     this->price = price; 
-}
+}; 
 int Car::get_price(){
-    return this->price; 
-}
-void Car::drive(int kms){
-    this->emissions = 20*kms; 
-}
+    return price; 
+}; 
+void Car::set_emission(int emission){
+    this->emission = emission; 
+}; 
+int Car::get_emission(){
+    return this->emission; 
+}; 
