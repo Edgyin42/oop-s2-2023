@@ -1,6 +1,8 @@
   #include "Airplane.h"  
 Airplane::Airplane(){}; 
-Airplane::Airplane(int w, int p){}; 
+Airplane::Airplane(int w, int p){
+    this->weight = w; 
+};
 int Airplane::get_numPassengers(){
     return this->numPassengers; 
 }; 
