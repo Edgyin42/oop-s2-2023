@@ -1,5 +1,8 @@
 #include "Helicopter.h"  
-Helicopter::Helicopter(){}; 
+Helicopter::Helicopter(){
+    this->fuel = 100; 
+    this->numberOfFlights = 0;
+}; 
 Helicopter::Helicopter(int w, string n){
     this->fuel = 100; 
     this->numberOfFlights = 0;
@@ -13,14 +16,16 @@ void Helicopter::set_name(string n){
     this->name = n; 
 }; 
 void Helicopter::fly(int headwind, int minutes){
-    if (headwind > 40){
+    if (headwind > 0){
+        if (headwind > 40){
         this->fuel -= 0.4*this->fuel; 
-    } 
-    else{
+        } 
+        else{
         this->fuel -= 0.18*this->fuel; 
-    }
+        }
+    }   
     if (this->weight > 5670){
         this->fuel  -= (this->weight-5670)*0.01; 
     }
     this->numberOfFlights += 1;
-}; 
+    }
