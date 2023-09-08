@@ -2,7 +2,8 @@
 Airplane::Airplane(){}; 
 Airplane::Airplane(int w, int p){
     this->weight = w; 
-};
+    this->numPassengers = p; 
+}
 int Airplane::get_numPassengers(){
     return this->numPassengers; 
 }; 
