@@ -18,12 +18,12 @@ void AirVehicle::set_fuel(float f){
 void AirVehicle::refuel(){
     this->fuel = 100.0; 
 }; 
-void AirVehicle::fly(int headwind, int minutes){
-    this->numberOfFlights += 1; 
-}; 
 int AirVehicle::get_numberOfFlights(){
     return this->numberOfFlights; 
-}; 
+};
+void AirVehicle::fly(int headwind, int minutes){
+    this->numberOfFlights += this->numberOfFlights; 
+};  
 void AirVehicle::set_numberOfFlights(int k){
     this->numberOfFlights = k; 
 }
