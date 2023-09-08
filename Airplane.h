@@ -1,3 +1,5 @@
+#ifndef AIRPLANE_H
+#define AIRPLANE_H
 #include <iostream>
 #include "AirVehicle.h"
 #include <string> 
@@ -13,3 +15,4 @@ class Airplane: public AirVehicle{
 
 
 };
+#endif

@@ -1,3 +1,5 @@
+#ifndef AIRVEHICLE_H
+#define AIRVEHICLE_H
 #include <iostream> 
 #include <string> 
 class AirVehicle{
@@ -18,3 +20,4 @@ class AirVehicle{
     void set_numberOfFlights(int k); 
     virtual void fly(int headwind, int minutes); 
 }; 
+#endif

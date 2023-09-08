@@ -21,10 +21,10 @@ void AirVehicle::refuel(){
 void AirVehicle::fly(int headwind, int minutes){
     this->numberOfFlights += 1; 
 }; 
-int AirVehicle::get_numberOfFlights(
+int AirVehicle::get_numberOfFlights(){
     return this->numberOfFlights; 
-); 
-AirVehicle::set_numberOfFlights(int k){
+}; 
+void AirVehicle::set_numberOfFlights(int k){
     this->numberOfFlights = k; 
 }
 

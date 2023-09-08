@@ -1,3 +1,5 @@
+#ifndef HELICOPTER_H
+#define HELICOPTER_H
 #include <iostream>
 #include "AirVehicle.h"
 #include <string> 
@@ -12,3 +14,4 @@ class Helicopter: public AirVehicle{
     void fly(int headwind, int minutes); 
 
 };
+#endif
