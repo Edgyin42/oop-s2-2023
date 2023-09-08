@@ -14,5 +14,7 @@ class AirVehicle{
     float get_fuel(); 
     void set_fuel(float f); 
     void refuel(); 
+    int get_numberOfFlights(); 
+    void set_numberOfFlights(int k); 
     virtual void fly(int headwind, int minutes); 
 }; 
