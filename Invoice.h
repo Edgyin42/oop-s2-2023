@@ -1,29 +1,17 @@
-#ifndef UNITTEST_H
-#define UNITTEST_H
-#include <iostream>
-#include "Addition.h"
+#ifndef INVOICE_H
+#define INVOICE_H
+#include <string>
+using namespace std;
 
-class UnitTest {
-public:
-    void runTests() {
-        testAddition();
-    }
+class Invoice {
+    private:
+        string invoiceId; // a unique identifier for the invoice
+        int dollarsOwed; // the total amount owed in dollars for service
 
-private:
-    void testAddition() {
-        Addition addition;
-
-        if (addition.add(1, 2) != 3) {
-            std::cout << "Test 1 failed!" << std::endl;
-        }
-        
-        if (addition.add(3,5) == 8) { 
-            std::cout << "Test 2 passed!" << std::endl;
-        }
-
-        if (addition.add(2,4) != 6) {
-            std::cout << "Test 3 failed!" << std::endl;
-        }
-    }
+    public:
+        Invoice(string invoiceId);
+        void addServiceCost(int costDollars);
+        int getDollarsOwed();
+        string getInvoiceId();
 };
 #endif

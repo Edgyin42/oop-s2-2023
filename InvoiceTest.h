@@ -1,29 +1,36 @@
-#ifndef UNITTEST_H
-#define UNITTEST_H
+#ifndef INVOICETEST_H
+#define INVOICETEST_H
 #include <iostream>
-#include "Addition.h"
+#include "Invoice.h"
 
-class UnitTest {
+class InvoiceTest {
 public:
     void runTests() {
-        testAddition();
+        testAddServiceCost();
+        // Add other test methods here
     }
 
 private:
-    void testAddition() {
-        Addition addition;
-
-        if (addition.add(1, 2) != 3) {
-            std::cout << "Test 1 failed!" << std::endl;
-        }
-        
-        if (addition.add(3,5) == 8) { 
-            std::cout << "Test 2 passed!" << std::endl;
+    void testAddServiceCost() {
+        {
+            Invoice invoice("ABCD");
+            invoice.addServiceCost(10);
+            if (invoice.getDollarsOwed() != 10) {
+                std::cout << "Test 1 failed!" << std::endl;
+            }
         }
 
-        if (addition.add(2,4) != 6) {
-            std::cout << "Test 3 failed!" << std::endl;
+        {
+            Invoice invoice("ABCD");
+            invoice.addServiceCost(1);
+            if (invoice.getDollarsOwed() != 1) {
+                std::cout << "Test 2 failed!" << std::endl;
+            }
         }
+
+        // Add more test cases here
     }
+
+    // Add other test functions here
 };
 #endif
