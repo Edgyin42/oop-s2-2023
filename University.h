@@ -10,10 +10,12 @@ class University {
     private: 
         std::string name;
         std::string location;
-        int std_id; 
+        //int std_id; 
         Course* courses;
         Gradebook *a; 
     public:
+        University(); 
+        University(string name, string location); 
         void set_name(string name); 
         string get_name(); 
         void set_location(string location);

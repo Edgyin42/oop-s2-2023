@@ -6,7 +6,7 @@
 using namespace std; 
 class Gradebook{
     private: 
-    Grade *a; 
+    Grade *grade; 
     public:
     void addGrade(int stud_id,int course_id, string assignment,int value); 
 }; 
