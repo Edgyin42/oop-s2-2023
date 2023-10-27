@@ -1,6 +1,7 @@
 #ifndef ASSISTS_H
 #define ASSISTS_H
 #include <tuple>
+#include "math.h"
 using namespace std;
 class Assists{
     public:
