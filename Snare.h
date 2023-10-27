@@ -10,7 +10,7 @@ class Snare: public Spot, Influence{
         return this->operative;
     }
     void implement(Spot &spot){
-        this->setCategory('S');
+        spot.setCategory('S');
         operative = false;
     }
 };
