@@ -1,6 +1,8 @@
 #include "Assists.h"
 #include <tuple>
 #include <iostream>
+#include "Influence.h"
+#include "Spot.h"
 using namespace std;
 int main(){
     tuple <int, int> a = Assists::createRandomLoc(3, 2);
