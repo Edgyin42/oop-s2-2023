@@ -6,7 +6,7 @@ class Persona: public Spot{
     public:
     Persona(int x, int y): Spot(x, y, 'P'){};
     void shift(int dx, int dy){
-        this->setLoc(get<0>(this->getLoc())+dx, get<1>(this->getLoc()) +dy);
+        this->location = make_tuple (get<0>(location)+dx, get<1>(location) +dy);
     }
 };
 #endif

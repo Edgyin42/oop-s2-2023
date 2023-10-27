@@ -5,9 +5,9 @@
 class Snare: public Spot, Influence{
     public: 
     Snare(int x, int y): Spot(x, y, 'S'){};
-    bool operative; 
+    bool operative = true; 
     bool isOperative(){
-        return this-operative;
+        return this->operative;
     }
     void implement(Spot &spot){
         this->setCategory('S');

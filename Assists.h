@@ -6,8 +6,8 @@ using namespace std;
 class Assists{
     public:
     static std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight){
-        int x = rand() % (matrixWidth+1);
-        int y = rand() % (matrixHeight+1);
+        int x = rand() % (matrixWidth);
+        int y = rand() % (matrixHeight);
         tuple<int, int> a = make_tuple(x, y);
         return a;
     }

@@ -48,8 +48,7 @@ class Play{
                         }
                     }
                 }
-            }
-            // Avatar = Persona 
+            } 
             for (int j = 0; j < matrix.size(); j++){
                 if (matrix[j]->getCategory() == 'P'){
                     Persona *persona = static_cast<Persona*>(matrix[j]);
